@@ -1,0 +1,52 @@
+2025-01-08 14:00:26:026 [35mhttp[39m: [35mGET /products 200 261 - 11.548 ms[39m
+[35m[39m
+2025-01-08 14:03:32:332 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:03:32:332 [35mhttp[39m: [35mPOST /products 201 45 - 12.494 ms[39m
+[35m[39m
+2025-01-08 14:03:44:344 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:03:44:344 [35mhttp[39m: [35mPOST /products 201 45 - 2.159 ms[39m
+[35m[39m
+2025-01-08 14:03:45:345 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:03:45:345 [35mhttp[39m: [35mPOST /products 201 45 - 1.430 ms[39m
+[35m[39m
+2025-01-08 14:03:46:346 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:03:46:346 [35mhttp[39m: [35mPOST /products 201 45 - 1.517 ms[39m
+[35m[39m
+2025-01-08 14:03:54:354 [35mhttp[39m: [35mGET /products 200 261 - 1.846 ms[39m
+[35m[39m
+2025-01-08 14:04:06:46 [35mhttp[39m: [35mGET /products 200 261 - 1.038 ms[39m
+[35m[39m
+2025-01-08 14:04:59:459 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:04:59:459 [35mhttp[39m: [35mPOST /products 201 45 - 11.010 ms[39m
+[35m[39m
+2025-01-08 14:16:47:1647 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:16:47:1647 [35mhttp[39m: [35mPOST /products 201 2 - 11.342 ms[39m
+[35m[39m
+2025-01-08 14:20:50:2050 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:20:50:2050 [35mhttp[39m: [35mPOST /products 400 36 - 8.837 ms[39m
+[35m[39m
+2025-01-08 14:21:46:2146 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:21:46:2146 [35mhttp[39m: [35mPOST /products 400 36 - 11.304 ms[39m
+[35m[39m
+2025-01-08 14:22:00:220 [35mhttp[39m: [35mPOST /products 201 45 - 3.512 ms[39m
+[35m[39m
+2025-01-08 14:22:05:225 [35mhttp[39m: [35mGET /products 200 346 - 1.936 ms[39m
+[35m[39m
+2025-01-08 14:22:10:2210 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:22:10:2210 [35mhttp[39m: [35mPOST /products 400 36 - 1.211 ms[39m
+[35m[39m
+2025-01-08 14:24:59:2459 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 14:39:56:3956 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 15:52:25:5225 [31merror[39m: [31mProduct already exists[39m
+2025-01-08 16:06:03:63 [35mhttp[39m: [35mGET /products 200 346 - 8.287 ms[39m
+[35m[39m
+2025-01-08 16:06:16:616 [35mhttp[39m: [35mPOST /products 201 45 - 3.464 ms[39m
+[35m[39m
+2025-01-08 16:36:27:3627 [35mhttp[39m: [35mGET /products 200 428 - 59690.332 ms[39m
+[35m[39m
+2025-01-08 17:19:31:1931 [35mhttp[39m: [35mPOST /products 201 45 - 9.457 ms[39m
+[35m[39m
+2025-01-08 17:19:35:1935 [35mhttp[39m: [35mGET /products 200 514 - 1.838 ms[39m
+[35m[39m
+2025-01-08 18:00:35:035 [35mhttp[39m: [35mGET /products 200 514 - 8.558 ms[39m
+[35m[39m

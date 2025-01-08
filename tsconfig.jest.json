@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "types": ["jest"],
+    "baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */,
+    "paths": {
+      "@middlewares/*": ["middlewares/*"], // Example path alias for middlewares
+      "@domain/*": ["domain/*"], // Example path alias for domain
+      "@infra/*": ["infra/*"], // Example path alias for infra
+      "@package/*": ["package/*"], // Example path alias for package
+      "@usecases/*": ["usecases/*"] // Example path alias for usecases
+    }
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules"]
+}
