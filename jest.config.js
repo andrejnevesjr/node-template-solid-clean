@@ -6,11 +6,11 @@ module.exports = {
     '^.+\\.ts$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }],
   },
   moduleNameMapper: {
-    '^@middlewares/(.*)$': '<rootDir>/src/middlewares/$1',
-    '^@routes/(.*)$': '<rootDir>/src/routes/$1',
-    '^@libs/(.*)$': '<rootDir>/src/libs/$1',
-    '^@models/(.*)$': '<rootDir>/src/models/$1',
-    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
+    '^@domain/(.*)$': '<rootDir>/src/domain/$1',
+    '^@infra/(.*)$': '<rootDir>/src/infra/$1',
+    '^@package/(.*)$': '<rootDir>/src/package/$1',
+    '^@usecases/(.*)$': '<rootDir>/src/usecases/$1',
+    '^@types/(.*)$': '<rootDir>/src/types/$1',
   },
   resolver: 'jest-ts-webcompat-resolver',
 };
