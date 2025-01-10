@@ -1,17 +1,12 @@
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { HttpMethod, Route } from '../routes';
 import {
   ListProductOutputDto,
   ListProductUseCase,
 } from '@usecases/product/list-product.usecase';
-
-export type ListProductResponseDto = {
-  products: {
-    id: string;
-    name: string;
-    price: number;
-  }[];
-};
+import path from 'path';
+import { errorResponse } from '@package/exceptions-handler/error.response';
+import { ListProductResponseDto } from 'types/product.types';
 
 export class ListProductRoute implements Route {
   private constructor(
@@ -31,14 +26,25 @@ export class ListProductRoute implements Route {
     listProductService: ListProductUseCase,
   ): ListProductRoute {
     return new ListProductRoute(
-      '/products',
+      path.join('/', path.basename(__dirname)),
       HttpMethod.GET,
       listProductService,
     );
   }
 
-  public getHandler(): (request: Request, response: Response) => Promise<void> {
-    return async (request: Request, response: Response) => {
+  public getHandler(): (
+    request: Request,
+    response: Response,
+    next: NextFunction,
+  ) => Promise<void> {
+    return async (request: Request, response: Response, next: NextFunction) => {
+      const { token } = request.cookies;
+
+      //validation
+      if (!token) {
+        return next(new errorResponse('You must Log in!', 401));
+      }
+
       const output = await this.listProductService.execute();
 
       const responseBody = this.presentOutput(output);
@@ -50,9 +56,9 @@ export class ListProductRoute implements Route {
   private presentOutput(input: ListProductOutputDto): ListProductResponseDto {
     const response: ListProductResponseDto = {
       products: input.products.map((product) => ({
-        id: product.id,
         name: product.name,
         price: product.price,
+        user_id: product.user_id,
       })),
     };
     return response;

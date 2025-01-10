@@ -1,12 +1,33 @@
-2025-01-08 14:03:32:332 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:03:44:344 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:03:45:345 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:03:46:346 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:04:59:459 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:16:47:1647 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:20:50:2050 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:21:46:2146 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:22:10:2210 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:24:59:2459 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 14:39:56:3956 [31merror[39m: [31mProduct already exists[39m
-2025-01-08 15:52:25:5225 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 13:43:04:434 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 14:13:35:1335 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 14:14:17:1417 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 14:46:01:461 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 14:47:16:4716 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 14:49:12:4912 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 14:49:48:4948 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 15:17:38:1738 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 15:32:42:3242 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 15:33:00:330 [31merror[39m: [31mProduct already exists[39m
+2025-01-09 15:33:52:3352 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-09 15:34:58:3458 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-09 15:51:24:5124 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-09 16:32:57:3257 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 12:24:16:2416 [31merror[39m: [31mUser - Repository - User already exists[39m
+2025-01-10 14:49:31:4931 [31merror[39m: [31mUser prop id, active status or role not found[39m
+2025-01-10 14:50:22:5022 [31merror[39m: [31mUser prop id, active status or role not found[39m
+2025-01-10 14:50:35:5035 [31merror[39m: [31mUser prop id, active status or role not found[39m
+2025-01-10 14:51:22:5122 [31merror[39m: [31mUser prop id, active status or role not found[39m
+2025-01-10 17:24:03:243 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:27:05:275 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:30:48:3048 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:31:42:3142 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:32:18:3218 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:32:41:3241 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:35:51:3551 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:35:55:3555 [31merror[39m: [31mProduct - Repository - Product already exists[39m
+2025-01-10 17:57:55:5755 [31merror[39m: [31mUser - Repository - email not found[39m
+2025-01-10 17:58:18:5818 [31merror[39m: [31mUser - Repository - email not found[39m
+2025-01-10 17:58:57:5857 [31merror[39m: [31mUser - Repository - email not found[39m
+2025-01-10 17:59:22:5922 [31merror[39m: [31mUser - Repository - email not found[39m
+2025-01-10 18:00:37:037 [31merror[39m: [31mUser - Repository - email not found[39m
+2025-01-10 18:02:58:258 [31merror[39m: [31mProduct - Repository - Product already exists[39m

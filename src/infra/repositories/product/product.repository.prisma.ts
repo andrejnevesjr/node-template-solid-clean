@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { PrismaClient } from '@prisma/client';
 import { ProductGateway } from '@domain/product/gateway/product.gateway';
-import { Product } from '@domain/product/entity/product';
+import { Product, ProductProps } from '@domain/product/entity/product';
 import Logger from '@package/logger/logger';
+import { CreateProductOutputDto } from 'types/product.types';
 
 export class ProductRepositoryPrisma implements ProductGateway {
   private constructor(private readonly prismaClient: PrismaClient) {}
@@ -23,12 +24,12 @@ export class ProductRepositoryPrisma implements ProductGateway {
     return new ProductRepositoryPrisma(prismaClient);
   }
 
-  public async save(product: Product): Promise<boolean> {
-    const newProduct = {
-      id: product.id,
+  public async save(product: Product): Promise<CreateProductOutputDto> {
+    const newProduct: ProductProps = {
       name: product.name,
       price: product.price,
       quantity: product.quantity,
+      user_id: product.user_id,
     };
 
     const productExists = await this.prismaClient.product.findFirst({
@@ -38,23 +39,37 @@ export class ProductRepositoryPrisma implements ProductGateway {
     });
 
     if (productExists) {
-      Logger.error('Product already exists');
-      return false;
+      Logger.error('Product - Repository - Product already exists');
+      return {
+        status: false,
+        message: 'Product already exists',
+      };
     }
 
-    await this.prismaClient.product.create({ data: newProduct });
-    return true;
+    const createdProduct = await this.prismaClient.product.create({
+      data: newProduct,
+    });
+    return {
+      status: true,
+      product: {
+        id: createdProduct.id,
+        name: createdProduct.name,
+        price: createdProduct.price,
+        quantity: createdProduct.quantity,
+        user_id: createdProduct.user_id,
+      },
+    };
   }
 
-  public async findAll(): Promise<Product[]> {
+  public async list(): Promise<Product[]> {
     const products = await this.prismaClient.product.findMany();
 
     const productList = products.map((p) => {
       const product = Product.with({
-        id: p.id,
         name: p.name,
         price: p.price,
         quantity: p.quantity,
+        user_id: p.user_id,
       });
       return product;
     });

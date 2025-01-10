@@ -16,11 +16,10 @@
     /* JavaScript Support */
     "baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
-      "@middlewares/*": ["middlewares/*"], // Example path alias for middlewares
       "@domain/*": ["domain/*"], // Example path alias for domain
       "@infra/*": ["infra/*"], // Example path alias for infra
       "@package/*": ["package/*"], // Example path alias for package
-      "@usecases/*": ["usecases/*"] // Example path alias for usecases
+      "@usecases/*": ["usecases/*"] // Example path alias for usecase
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
 
     /* Emit */
@@ -39,3 +38,4 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
+

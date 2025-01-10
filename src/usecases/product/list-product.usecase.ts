@@ -10,6 +10,7 @@ export type ListProductOutputDto = {
     name: string;
     price: number;
     quantity: number;
+    user_id: string;
   }[];
 };
 
@@ -25,7 +26,7 @@ export class ListProductUseCase
   }
 
   public async execute(): Promise<ListProductOutputDto> {
-    const products = await this.productGateway.findAll();
+    const products = await this.productGateway.list();
 
     const output = this.presentOutput(products);
 
@@ -35,10 +36,11 @@ export class ListProductUseCase
   private presentOutput(products: Product[]): ListProductOutputDto {
     const productList = {
       products: products.map((product) => ({
-        id: product.id,
+        id: product.id as string,
         name: product.name,
         price: product.price,
         quantity: product.quantity,
+        user_id: product.user_id,
       })),
     };
 

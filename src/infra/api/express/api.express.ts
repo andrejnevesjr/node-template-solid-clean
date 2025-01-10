@@ -8,6 +8,7 @@ import cookierParser from 'cookie-parser';
 import cors from 'cors';
 import morganMiddleware from '@package/morgan/morgan.middleware';
 import rateLimit from 'express-rate-limit';
+import errorHandler from '@package/exceptions-handler/error.handler';
 
 export class ApiExpress implements Api {
   private app: Express;
@@ -38,6 +39,9 @@ export class ApiExpress implements Api {
     );
 
     this.addRoutes(routes);
+
+    // Error Handler
+    this.app.use(errorHandler);
   }
 
   public getApp(): Express {

@@ -2,9 +2,9 @@ import request from 'supertest';
 import { ApiExpress } from '../src/infra/api/express/api.express';
 import { CreateProductRoute } from '../src/infra/api/express/routes/products/create-product.express.route';
 import { ListProductRoute } from '../src/infra/api/express/routes/products/list-product.express.route';
-import { ProductRepositoryPrisma } from '../src/infra/repositories/product/product.repository.prisma';
 import { CreateProductUseCase } from '../src/usecases/product/create-product.usecase';
 import { ListProductUseCase } from '../src/usecases/product/list-product.usecase';
+import { ProductRepositoryPrisma } from '../src/infra/repositories/product/product.repository.prisma';
 
 import { prismaMock } from './singleton';
 
